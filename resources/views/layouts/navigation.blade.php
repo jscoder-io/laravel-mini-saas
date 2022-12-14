@@ -20,6 +20,12 @@
               <a class="nav-link" href="#">My Leads</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="#">Subscription</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Community</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="#">FAQ</a>
             </li>
 
