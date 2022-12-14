@@ -20,5 +20,33 @@ use Illuminate\Support\Facades\Route;
 //])->group(function () {
     Route::get('/', function () {
         return view('dashboard');
-    })->name('dashboard');
+    })->name('leads');
+
+    Route::get('/my-leads', function () {
+        return view('leads.bought');
+    })->name('leads.bought');
+
+    Route::get('/my-leads/view', function () {
+        return view('leads.view');
+    })->name('leads.view');
+
+    Route::get('/subscription', function () {
+        return view('subscription');
+    })->name('subscription');
+
+    Route::get('/pro-subscription', function () {
+        return view('subscription.pro');
+    })->name('subscription.pro');
+
+    Route::get('/community', function () {
+        return view('community');
+    })->name('community');
+
+    Route::get('/faq', function () {
+        return view('faq');
+    })->name('faq');
+
+    Route::get('/profile', function () {
+        return view('profile');
+    })->name('profile');
 //});
