@@ -15,22 +15,27 @@ return new class extends Migration
     {
         Schema::create('leads', function (Blueprint $table) {
             $table->id();
+            $table->uuid();
             $table->string('lead_id');
-            $table->string('seller_motivation');
-            $table->string('selling_timeframe');
-            $table->string('exterior_cond');
-            $table->string('kitchen_cond');
-            $table->string('bathroom_cond');
-            $table->string('yard_cond');
-            $table->double('price', 12, 4);
-            $table->boolean('agent_listed');
-            $table->boolean('mortgage');
-            $table->string('house_type');
-            $table->string('constructed_year');
-            $table->double('square_footage');
-            $table->unsignedInteger('bedroom');
-            $table->unsignedInteger('bathroom');
+            $table->unsignedInteger('status')->nullable();
+            $table->unsignedInteger('seller_motivation')->nullable();
+            $table->unsignedInteger('selling_timeframe')->nullable();
+            $table->unsignedInteger('exterior_cond')->nullable();
+            $table->unsignedInteger('kitchen_cond')->nullable();
+            $table->unsignedInteger('bathroom_cond')->nullable();
+            $table->unsignedInteger('yard_cond')->nullable();
+            $table->double('clearance_price', 12, 4)->nullable();
+            $table->boolean('agent_listed')->default(0);
+            $table->unsignedInteger('mortgage')->nullable();
+            $table->unsignedInteger('house_type')->nullable();
+            $table->string('constructed_year')->nullable();
+            $table->double('square_footage')->default(0);
+            $table->unsignedInteger('bedroom')->default(0);
+            $table->unsignedInteger('bathroom')->default(0);
+            $table->unsignedBigInteger('county_id');
             $table->timestamps();
+
+            $table->foreign('county_id')->references('id')->on('counties');
         });
     }
 

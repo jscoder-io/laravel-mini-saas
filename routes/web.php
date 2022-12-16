@@ -1,5 +1,7 @@
 <?php
 
+use App\Models\Lead;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,8 +20,9 @@ use Illuminate\Support\Facades\Route;
 //    config('jetstream.auth_session'),
 //    'verified'
 //])->group(function () {
-    Route::get('/', function () {
-        return view('dashboard');
+    Route::get('/', function (Request $request) {
+        return view('dashboard')
+            ->with('leads', (new Lead)->latest()->userFilters()->paginate(10));
     })->name('leads');
 
     Route::get('/my-leads', function () {
