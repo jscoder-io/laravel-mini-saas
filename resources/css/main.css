@@ -145,13 +145,7 @@
     color: #333333;
   }
   
-  .leads main .heading-text {
-    margin-top: 40px;
-  }
-  
-  .leads main .heading-text .heading {
-    font-family: Manrope;
-    font-style: normal;
+  .heading {
     font-weight: 700;
     font-size: 32px;
     line-height: 44px;
@@ -159,6 +153,8 @@
     text-align: left;
     letter-spacing: -0.01em;
   }
+
+  .mb-40 { margin-bottom:40px; }
   
   @media (max-width: 991.9px) {
     .leads main .heading-text .heading {
@@ -419,7 +415,7 @@
     height:235px;
   }
 
-  .navbar {padding-top:25px;}
+  .navbar {padding-top:25px; padding-bottom:30px;}
   
   @media (max-width: 991.9px) {
     .leads main .leads-list .card .img-container {
@@ -514,7 +510,18 @@
   .lc-prop-pics span { font-size: 11px;
     color: #333;
     margin-left: 5px; }
-  
+
+  .lc-fc { font-weight:700; color:#333; font-size:13px; line-height:17px; margin:0; }
+  .lc-ft { font-weight:500; font-size:11px; line-height:15px; color:#999; margin:0; }
+  .lc-verified { background: #E3FFD9;
+    color: #30b900;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 800;
+    padding: 4px 10px;
+    border-radius: 30px; }
+  .lc-verified i { color:#30b900;  }
+
   .leads main .leads-list .card .first-col .show-motivate,
   .leads main .leads-list .card .second-col .show-motivate {
     -webkit-transform: translateY(10px);
@@ -543,6 +550,18 @@
     color: #999999;
     margin:0;
   }
+
+  .lc-mylead { padding:30px 30px 30px; background:#fff; border-radius:10px; border:1px solid #dfdfdf; }
+  .lc-mylead table { font-size:14px; }
+  .lc-mylead table thead { background:#fff; border:#fff;  }
+  .lc-mylead table thead th { font-weight: 700; padding-top: 0;  padding-bottom: 5px; }
+  .lc-mylead table > tbody > tr { border:#dfdfdf; }
+  .lc-mylead table > tbody > tr > .btn-link:hover { background:#0067FC; }
+  .lc-mylead table > tbody > tr:hover { background:#F2F7FF;  }
+  .lc-mylead table > tbody > tr:last-child { border:#fff; }
+  .lc-mylead table i { font-weight: 500;
+    font-size: 20px;
+    color: #333; }
   
   @media (max-width: 991.9px) {
     .leads main .leads-list .card .city,
