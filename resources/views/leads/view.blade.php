@@ -54,31 +54,31 @@
 
     <div class="col-6 px-0 ps-4 lc-view" style="background:#fff; border:1px solid #dfdfdf; border-radius:10px; padding:20px 40px;">
       <div class="row">
-        <div class="col-6 mb-2 lc-fc">NOV 14, 2022 - 11:07PM</div>
-        <div class="col-6 text-end">
+        <div class="col-6 mb-2 lc-fc px-0">NOV 14, 2022 - 11:07PM</div>
+        <div class="col-6 text-end px-0">
             <div class="lc-verified"><i class="fa-solid fa-circle-check"></i> PHONE NUMBER VERIFIED</div>
         </div>
-        <div class="col-5 mb-2">
+        <div class="col-5 mb-2 px-0">
             <p class="lc-ft">Name</p>  
             <p class="lc-fc">Randolph Fonseca</p>
         </div>
-        <div class="col-3">
+        <div class="col-3 px-0">
             <p class="lc-ft">Phone</p>  
             <p class="lc-fc"><a href="tel:+15551035423">(555) 103 5423</a></p>
         </div>
-        <div class="col-4">
+        <div class="col-4 px-0">
             <p class="lc-ft">E-Mail Address</p>  
             <p class="lc-fc"><a href="mailto:randolphs@gmail.com">randolphs@gmail.com</a></p>
         </div>        
-        <div class="col-5 mb-2">
+        <div class="col-5 mb-2 px-0">
             <p class="lc-ft">Address</p>  
             <p class="lc-fc">10880 Malibu Point</p>
         </div>
-        <div class="col-3">
+        <div class="col-3 px-0">
             <p class="lc-ft">City</p>  
             <p class="lc-fc">Los Angeles</p>
         </div>
-        <div class="col-4">
+        <div class="col-4 px-0">
             <p class="lc-ft">State</p>  
             <p class="lc-fc">California</p>
         </div>
