@@ -20,10 +20,17 @@ use Illuminate\Support\Facades\Route;
 //    config('jetstream.auth_session'),
 //    'verified'
 //])->group(function () {
-    Route::get('/', function (Request $request) {
-        return view('dashboard')
-            ->with('leads', (new Lead)->latest()->userFilters()->paginate(10));
+
+    Route::get('/', function () {
+        return view('leads')->with('leads', Lead::latest()->paginate(10));
     })->name('leads');
+
+    Route::post('/leads/search', function () {
+        return view('leads.search')
+            ->with('leads', Lead::latest()->userFilters()->paginate(10));
+    })->name('leads.search');
+
+//    Route::get('/', Leads::class)->name('leads');
 
     Route::get('/my-leads', function () {
         return view('leads.bought');
