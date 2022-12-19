@@ -42,11 +42,7 @@
     }
   }
   
-  @media (max-width: 991.9px) {
-    .leads nav .icons {
-      display: none;
-    }
-  }
+ 
   
   .leads nav .nav-link {
     margin: 0.25rem 0 0px;
@@ -511,7 +507,10 @@
     color: #333;
     margin-left: 5px; }
 
-  .lc-fc { font-weight:700; color:#333; font-size:13px; line-height:17px; margin:0; }
+  .lc-fc { font-weight:800; color:#333; font-size:14px; line-height:16px; margin:0; letter-spacing: -0.2px; }
+  .lc-fc a { color:#333; }
+  .lc-fc a:hover { color:#333; text-decoration:underline; }
+  .lc-fc span { font-weight:500; font-size:11px;  }
   .lc-ft { font-weight:500; font-size:11px; line-height:15px; color:#999; margin:0; }
   .lc-verified { background: #E3FFD9;
     color: #30b900;
@@ -521,6 +520,16 @@
     padding: 4px 10px;
     border-radius: 30px; }
   .lc-verified i { color:#30b900;  }
+
+  .lc-pro-normal { font-size: 14px;
+    font-weight: 800;
+    background: #FF8A00;
+    color: #fff;
+    border-radius: 7px;
+    padding: 5px 10px; }
+  .lc-pro-normal:hover { color:#fff; background:#FFA133; }
+  .lc-pro-normal i { font-size: 13px; margin-right: 2px; }
+  .lc-details-probadge span { font-weight: 800; letter-spacing: -0.5px; }
 
   .leads main .leads-list .card .first-col .show-motivate,
   .leads main .leads-list .card .second-col .show-motivate {
@@ -982,11 +991,11 @@
   html {
     position: relative;
     min-height: 100%;
-    padding-bottom: 110px;
+    padding-bottom: 70px;
   }
   
   html body {
-    margin-bottom: 110px;
+    margin-bottom: 50px;
   }
   
   .theme-color {
@@ -2106,7 +2115,12 @@
       width: 80vw !important;
     }
   }
-  
+
+  .lc-view { background:#fff; border:1px solid #dfdfdf; border-radius:10px; padding:27px 30px; }
+  .carousel-inner {  border-radius:10px; }
+  .lc-myleads-back a { color: #333; font-weight: 800; font-size: 18px; padding-top: 6px;   display: inline-block; }
+    .lc-myleads-back a i { margin-right:5px; }
+    .carousel { height:100%; }
   .exp-search-btn {
     height: 60px;
   }
@@ -2249,7 +2263,7 @@
     footer {
       height: 30px;
       position: absolute;
-      bottom: 0;
+      bottom: 30px;
       width: 100%;
     }
   }
@@ -2284,5 +2298,42 @@
     /* identical to box height */
     padding-left: 30px;
     color: #000000;
+  }
+
+
+  @media (max-width: 991.9px) {
+    .leads nav .icons {
+      display: none;
+    }
+
+    .mb-h { display:none !important; }
+    .lc-clead { color: #333;
+      font-size: 14px;
+      text-transform: capitalize;
+      font-weight: 800;
+      border: 1px solid #dfdfdf;
+      padding: 12px 20px;
+      border-radius: 10px;
+      display: block;
+      width: 100%; }
+
+    .lc-mylead { background:transparent; border:0; }
+    .lc-mylead thead { display:none; }
+    .lc-mylead table tr { background:white; border:1px solid #dfdfdf !important; border-radius:10px; width:94vw; margin-bottom:10px; display:block; }
+    .lc-mylead table tr td { width:94vw; display:block; border:0; }
+    
+    footer { position: absolute;  top: 187vh; }
+    .carousel { position: absolute; z-index: -1; width: 100vw; left: 0; height: 77vw; }
+    .carousel-inner {  border-radius:0px; }
+    .lc-myleads-back a { padding-top: 30px; display: inline-block;  padding-bottom: 5px; }
+    .lc-view { margin-top:69vw; position: absolute; width: 94vw; }
+    .lc-fc { display:inline-block; width:55%; font-size:15px !important; vertical-align:top; line-height: 20px; }
+    .lc-fc span { font-size:13px !important; }
+    .lc-ft { display:inline-block; width:43%; font-size:13px !important; vertical-align:top; }
+
+    .lc-detail-name { font-size:24px !important; width:100%; letter-spacing:-0.7px; font-weight:800; }
+    .lc-detail-phone { color:#333; width:100%;}
+    .lc-detail-email { color:#333; width:100%; }
+    .lc-detail-phone a, .lc-detail-email a { color:#333; text-decoration:underline; margin-left: 5px; }
   }
   /*# sourceMappingURL=styles.css.map */
